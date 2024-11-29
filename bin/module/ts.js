@@ -11,9 +11,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 // import ora from "ora";
 // import download from 'download-git-repo'
 import { downGit } from "../utils/downGit.js";
-const prettier = (cmd) => {
-    cmd.command('prettier').description('生成prettier配置文件').action(() => __awaiter(void 0, void 0, void 0, function* () {
-        yield downGit('MBlee/mbb-cfg-prettier', './');
+const ts = (cmd) => {
+    cmd.command('ts').description('生成ts配置文件').action(() => __awaiter(void 0, void 0, void 0, function* () {
+        yield downGit('MBlee/mbb-cfg-ts', './');
     }));
 };
-export { prettier };
+export { ts };
