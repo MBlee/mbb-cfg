@@ -1,6 +1,6 @@
 {
   "name": "@coswars/mbb-cfg",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "命令行：获取配置文件",
   "main": "./bin/index.js",
   "type": "module",
