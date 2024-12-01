@@ -11,12 +11,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 // import ora from "ora";
 // import download from 'download-git-repo'
 import { downGit } from '../utils/downGit.js';
-const ts = (cmd) => {
+const vscode = (cmd) => {
     cmd
-        .command('ts')
-        .description('生成ts配置文件')
+        .command('vscode')
+        .description('生成vscode配置文件')
         .action(() => __awaiter(void 0, void 0, void 0, function* () {
-        yield downGit('MBlee/mbb-cfg-ts', './');
+        yield downGit('MBlee/mbb-cfg-vscode', './');
     }));
 };
-export { ts };
+export { vscode };

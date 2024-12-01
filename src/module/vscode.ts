@@ -3,13 +3,13 @@ import { Command } from 'commander';
 // import ora from "ora";
 // import download from 'download-git-repo'
 import { downGit } from '../utils/downGit.js';
-const ts = (cmd: Command) => {
+const vscode = (cmd: Command) => {
   cmd
-    .command('ts')
-    .description('生成ts配置文件')
+    .command('vscode')
+    .description('生成vscode配置文件')
     .action(async () => {
-      await downGit('MBlee/mbb-cfg-ts', './');
+      await downGit('MBlee/mbb-cfg-vscode', './');
     });
 };
 
-export { ts };
+export { vscode };
