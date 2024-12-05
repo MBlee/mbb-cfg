@@ -7,6 +7,7 @@ const downGit = (gitRepo: string, dest: string) => {
     const startTime = process.hrtime();
     const spinner = ora().start();
     spinner.text = chalk.cyan(`开始下载 ${gitRepo} 文件`);
+    //
     download(gitRepo, dest, { clone: false }, (err) => {
       err
         ? spinner.fail(chalk.red(`\n${gitRepo} 下载失败`))

@@ -11,6 +11,7 @@ import { prettier } from './module/prettier.js';
 import { ts } from './module/ts.js';
 import { git } from './module/git.js';
 import { vscode } from './module/vscode.js';
+import { babel } from './module/babel.js';
 
 interface TCMD extends Command {
   useCmd?: (cmd: any) => void;
@@ -27,5 +28,7 @@ cmd.useCmd(prettier);
 cmd.useCmd(ts);
 cmd.useCmd(git);
 cmd.useCmd(vscode);
+
+cmd.useCmd(babel);
 
 cmd.parse();
