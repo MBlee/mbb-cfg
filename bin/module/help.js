@@ -1,7 +1,18 @@
-import chalk from "chalk";
+import chalk from 'chalk';
 const help = (cmd) => {
-    cmd.command('help').description('帮助命令').action(() => {
-        console.log(chalk.cyan('这是帮助命令'));
+    cmd
+        .command('help')
+        .description('mbb-cfg命令')
+        .action(() => {
+        console.log(chalk.cyan(`
+			参数列表：
+				prettier
+				eslint
+				ts
+				babel
+				git
+				vscode
+		`));
     });
 };
 export { help };
